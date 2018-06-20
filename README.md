@@ -206,7 +206,21 @@ containing directory instead of its contents, this code is not available.
 
 ## Notes on open data sources for Boston
 
+###
+
+### https://recollect.net
+
+This is the new source for Boston's trash day information according to the Boston digital team.
+trash_intent.py calls the ReCollect API at https://recollect.net to obtain trash day info.
+
 ### https://data.boston.gov
+
+**DEPRECATED**
+
+On 13 Feb 2017, jmartini wrote:
+'The Boston digital team stated that the trash day info at data.boston.gov is often out of date. 
+They are currently using a 3rd party called ReCollect to manage the newest trash day info.'
+
 This is the new portal for Boston's open data efforts. This site uses a tool
 called CKAN, which describes itself as follows:
    >CKAN is a tool for making open data websites. (Think of a content management
@@ -224,7 +238,7 @@ preview page there is a **DATA API** link.
 
 Here you can find a link labelled **odata**. odata is a REST protocol for open
 data. CKAN provides an odata endpoint for the **trash schedules by address**
-dataset.
+dataset.  ** Trash day info frequently out of date **
 
 ### https://mayors24.cityofboston.gov/open311/v2/services.json
 This is the Open311 portal for the city of Boston. It requires an API key
